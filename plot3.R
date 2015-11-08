@@ -13,8 +13,8 @@ DT$Timestamp <- strptime(paste(DT$Date,DT$Time), format="%d/%m/%Y %H:%M:%S")
 ## subsetting the data
 DT <- subset(DT,as.Date(DT$Timestamp) >= "2007-02-01" 
              & as.Date(DT$Timestamp) < "2007-02-03")
-## openning the output grpahics file
 
+## openning the output grpahics file
 png (file = "plot3.png", height=480, width=480, bg="white" )
 
 ##to create a line plot

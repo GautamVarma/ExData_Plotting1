@@ -18,6 +18,6 @@ DT <- subset(DT,as.Date(DT$Timestamp) >= "2007-02-01" &
 ## openning the output grpahics file
 png (file = "plot2.png", height = 480, width = 480, bg = "white" )
 plot(DT$Timestamp, DT$Global_active_power,
-     ylab = "Global Active Power (Kilowatts)", type ="l")
+     xlab ="", ylab = "Global Active Power (Kilowatts)", type ="l")
 ##closing the graph output
 dev.off()
